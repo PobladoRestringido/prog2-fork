@@ -21,3 +21,6 @@ class Horario:
                 self.hora_fin = nuevo_horario[2]
             else:
                 print('No es un horario válido')
+
+        def __str__(self):
+            return f"El horario: {self.dia}, {self.hora_inicio}, {self.hora_fin}"
